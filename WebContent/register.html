@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<title>HR Operation Manager</title>
+<meta name="description" content="for company management" />
+<meta name="keywords" content="hr operation manager" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+<script>  
+function validateform(){  
+var loginname=document.myform.loginname.value;  
+var password=document.myform.password.value;
+var name=document.myform.username.value;  
+ var fathername=document.myform.fathername.value; 
+ var gender=document.myform.gender.value; 
+ 
+var mobile=document.myform.mobile.value;  
+var pincode=document.myform.pincode.value;  
+var address=document.myform.address.value;  
+var qualification=document.myform.qualification.value;  
+
+  
+ 
+ 
+if (loginname==null || loginname=="")
+{  
+  alert("LoginName can't be blank");  
+  return false;  
+
+  }
+  else if(password.length<6)
+  {  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+ else if(name==null || name=="")
+  {  
+  alert("name cant be blank");  
+  return false; 
+}  
+else if(fathername==null || fathername=="")
+  {  
+  alert("fathername cant be blank");  
+  return false; 
+} 
+
+
+    else if(mobile.length!=10)
+  {  
+  alert("Enter the correct mobile number");  
+  return false;
+}  
+else if(pincode.length<6)
+  {  
+  alert("Pincode must be at least 6 characters long.");  
+  return false; 
+	}
+    
+  else if(address==null || address=="")
+  {  
+  alert("please enter the address");  
+  return false; 
+  }  
+  else if(qualification==null || qualification=="")
+  {  
+  alert("please enter the qualification.");  
+  return false; 
+}  
+  
+  
+}  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="banner">
+				<a href="#">ABC Software Pvt. Ltd.</a>
+			</div>
+			<div id="menubar">
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="company.html">Company</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li class="last"><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="site_content">
+
+			<div id="content">
+				<br><strong><h1>New Registeration</h1>
+						<hr>
+							</font> <b>(marked with * are mandatory fields)</b>
+							<form action="registeruser.jsp" method="post" name="myform"
+								onSubmit="return validateform()">
+
+								<table>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td><h3>Login Details</h3></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Login Name *</td>
+										<td><input type="text" name="loginname" size="22"></input></td>
+										<td></td>
+										<td>Password *</td>
+										<td><input type="password" name="password" size="22"></input></td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td><a href="#">check availability</a></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td><h3>Personal Details</h3></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Name *</td>
+										<td><input type="text" name="username" size="22"></input></td>
+										<td></td>
+										<td>Father's Name *&nbsp;&nbsp</td>
+										<td><input type="text" name="fathername" size="22"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Gender *</td>
+
+										<td><input type="radio" name="gender" value="male">Male</input>
+											&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender"
+											value="female">Female</input></td>
+										<td></td>
+										<td>Email *</td>
+										<td><input type="email" name="email" size="22"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Mobile *</td>
+										<td><input type="text" name="mobile" size="22"></input></td>
+										<td></td>
+										<td>Pin Code *</td>
+										<td><input type="text" name="pincode" size="22"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Address *</td>
+										<td><textarea name="address"></textarea></td>
+										<td></td>
+										<td>Date of Birth *</td>
+										<td><input type="date" name="dob"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td><h3>Qualification Details</h3></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									<tr>
+										<td>Qualification *</td>
+										<td><input type="text" name="qualification" size="22"></input></td>
+										<td></td>
+										<td>Experience</td>
+										<td><input type="text" name="experience" size="22"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td>Achievements</td>
+										<td><input type="text" name="achievement" size="22"></input></td>
+										<td></td>
+										<td>Skills</td>
+										<td><input type="text" name="skills" size="22"></input></td>
+									</tr>
+
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+
+									<tr>
+										<td></td>
+										<td><input class="myButton" type="submit"
+											value=" Register Me "></input> <input class="myButton"
+											type="reset" value=" Reset Form "></input></td>
+										<td></td>
+									</tr>
+								</table>
+							</form>
+
+							<div class="content_item"></div>
+			</div>
+
+
+		</div>
+		<div id=side>
+			<img src="images/register.jpg" alt="twitter" />
+		</div>
+
+	</div>
+
+</body>
+</html>

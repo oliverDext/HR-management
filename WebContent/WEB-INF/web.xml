@@ -1,0 +1,24 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>forgetpage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/forgetpage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>UploadUserPhotoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/UploadUserPhotoServlet</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,19 @@
+
+
+create table user(loginname varchar(50),
+password varchar(50),
+username varchar(50),
+fathername varchar(50),
+gender varchar(10),
+email varchar(50),
+mobile varchar(50),
+pincode varchar(50),
+address varchar(150),
+dob varchar(50),
+qualification varchar(50),
+experience varchar(50),
+achievement varchar(50),
+skills varchar(50)
+);
+
+desc user;
