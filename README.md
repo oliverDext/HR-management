@@ -1,1 +1,1 @@
-# HumanResource-Managemen
+# HumanResource-Management
